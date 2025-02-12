@@ -24,8 +24,9 @@ function App() {
     <>
       {/* <Navbar/> */}
       {/* <MainComp /> */}
-      <div className="mainData">
+      {/* <div className="navComp w-screen"> */}
         <Navbar toggleSidebar={toggleSidebar} />
+        {/* </div> */}
         <div className="mainComp flex justify-start w-full">
           <div className={className}>
             <Sidebar />
@@ -39,7 +40,7 @@ function App() {
             </Routes>
           {/* </div> */}
         </div>
-      </div>
+      
     </>
   );
 }

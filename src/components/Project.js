@@ -27,14 +27,16 @@ const ProjectCard = [
     cardDesc:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur tempore sint amet minus harum necessitatibus fuga dolore natus, magnam pariatur velit! Fugit illo error ea amet explicabo. Accusamus, tenetur.",
   },
+  {
+    cardImg: `${logo.appLogo}`,
+    cardName: "Project 5",
+    cardDesc:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur tempore sint amet minus harum necessitatibus fuga dolore natus, magnam pariatur velit! Fugit illo error ea amet explicabo. Accusamus, tenetur.",
+  },
 ];
 
 const Project = () => {
-  return (
-    <div>
-      <Card CardData={ProjectCard} isDashboard={false}/>
-    </div>
-  );
+  return <Card CardData={ProjectCard} isDashboard={false} />;
 };
 
 export default Project;

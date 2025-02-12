@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ CardData, isDashboard }) => {
   return (
@@ -20,12 +21,19 @@ const Card = ({ CardData, isDashboard }) => {
             </div>
             {isDashboard && (
               <div className="flex align-middle justify-center font-bold uppercase">
-                <button className="border-2 rounded capitalize w-full m-3 p-2 italic">
+                <Link
+                  className="border-2 rounded capitalize w-full m-3 p-2 italic"
+                  to={
+                    cardDetails.cardName === "Tutorials"
+                      ? `/tutorial`
+                      : `/projects`
+                  }
+                >
                   {cardDetails.cardName === "Tutorials"
                     ? `Get into your tutorials `
                     : `Start project `}
                   <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                </Link>
               </div>
             )}
           </div>
