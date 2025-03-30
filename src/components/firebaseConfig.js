@@ -12,7 +12,6 @@ import {
 // Your Firebase Config (Replace with your credentials)
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  // apiKey:"AIzaSyAdfT7xx9Hse16qptMf9mBQgZnX2UNGpkI",
   authDomain: "e-learning-9e4a5.firebaseapp.com",
   projectId: "e-learning-9e4a5",
   storageBucket: "e-learning-9e4a5.firebasestorage.app",
