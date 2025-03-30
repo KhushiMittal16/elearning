@@ -70,7 +70,7 @@ export default function Navbar({ toggleSidebar }) {
             >
               <span className="absolute -inset-1.5" />
               {/* <span className="sr-only">View notifications</span> */}
-              <i class="fa-solid fa-bars" style={{ color: "#f7f7f7" }}></i>
+              <i className="fa-solid fa-bars" style={{ color: "#f7f7f7" }}></i>
             </button>
 
             {/* Profile dropdown */}

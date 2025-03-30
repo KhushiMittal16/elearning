@@ -4,10 +4,11 @@ import { Routes, Route } from "react-router-dom";
 import Tutorial from "./components/Tutorial";
 import Project from "./components/Project";
 import Navbar from "./components/Navbar";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./components/Dashboard"; 
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import AboutUs from "./components/AboutUs";
+import GoogleLogin from "./components/GoogleLogin";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
@@ -25,22 +26,22 @@ function App() {
       {/* <Navbar/> */}
       {/* <MainComp /> */}
       {/* <div className="navComp w-screen"> */}
-        <Navbar toggleSidebar={toggleSidebar} />
-        {/* </div> */}
-        <div className="mainComp flex justify-start w-full">
-          <div className={className}>
-            <Sidebar />
-          </div>
-          {/* <div className="appData w-3/4"> */}
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/tutorial" element={<Tutorial />} />
-              <Route path="/projects" element={<Project />} />
-              <Route path="/about-us" element={<AboutUs/>}/>
-            </Routes>
-          {/* </div> */}
+      <Navbar toggleSidebar={toggleSidebar} />
+      <GoogleLogin />
+      {/* </div> */}
+      <div className="mainComp flex justify-start w-full">
+        <div className={className}>
+          <Sidebar />
         </div>
-      
+        {/* <div className="appData w-3/4"> */}
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/about-us" element={<AboutUs />} />
+        </Routes>
+        {/* </div> */}
+      </div>
     </>
   );
 }

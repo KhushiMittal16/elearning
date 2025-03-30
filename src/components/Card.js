@@ -32,7 +32,7 @@ const Card = ({ CardData, isDashboard }) => {
                   {cardDetails.cardName === "Tutorials"
                     ? `Get into your tutorials `
                     : `Start project `}
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </div>
             )}
