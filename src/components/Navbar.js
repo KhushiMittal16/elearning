@@ -138,6 +138,7 @@ export default function Navbar({ toggleSidebar }) {
             >
               {item.name}
             </DisclosureButton> */}
+            
               <Link to={item.href}>{item.name}</Link>
             </div>
           ))}
