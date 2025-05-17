@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "./Card";
 import { logo } from "../assets/images";
 import { useAuth } from "./AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebaseConfig";
 import Navbar from "./Navbar";
 
@@ -38,8 +38,8 @@ const Dashboard = () => {
         <Card CardData={DashboardData} isDashboard={true} />
         {user?.name}
       </div>
-
-      <button onClick={handleLogout}>Logout</button>
+      {/* <Link to="/login-page">sign in with google</Link> */}
+      {/* <button onClick={handleLogout}>Logout</button> */}
     </>
   );
 };

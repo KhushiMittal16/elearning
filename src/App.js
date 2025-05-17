@@ -29,47 +29,42 @@ function App() {
       {/* <MainComp /> */}
       {/* <div className="navComp w-screen"> */}
       {/* <Navbar toggleSidebar={toggleSidebar} /> */}
-      <MainComp/>
+      {/* <MainComp /> */}
       {/* </div> */}
+      <Navbar toggleSidebar={toggleSidebar}/>
       <div className="mainComp flex justify-start w-full">
-      <GoogleLogin />
+        {/* <GoogleLogin /> */}
         <div className={className}>
           <Sidebar />
         </div>
         {/* <div className="appData w-3/4"> */}
         <Routes>
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
+          <Route path="/" element={<Dashboard />} />
           <Route
             path="/tutorial"
             element={
-              <PrivateRoute>
-                <Tutorial />
-              </PrivateRoute>
+              // <PrivateRoute>
+              <Tutorial />
+              // </PrivateRoute>
             }
           />
           <Route
             path="/projects"
             element={
-              <PrivateRoute>
-                <Project />
-              </PrivateRoute>
+              // <PrivateRoute>
+              <Project />
+              // </PrivateRoute>
             }
           />
           <Route
             path="/about-us"
             element={
-              <PrivateRoute>
-                <AboutUs />{" "}
-              </PrivateRoute>
+              // <PrivateRoute>
+              <AboutUs />
+              // </PrivateRoute>
             }
           />
+          <Route path="/login-page" element={<GoogleLogin />} />
         </Routes>
         {/* </div> */}
       </div>
